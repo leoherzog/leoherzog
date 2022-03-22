@@ -12,11 +12,12 @@ jobs:
     - uses: actions/setup-python@v3
       with:
         python-version: '3.x'
-        cache: 'pip'
       env:
         OWMAPIKEY: ${{ secrets.OWMAPIKEY }}
     - name: Install Dependencies
-      run: pip install requests bs4
+      run: |
+        python -m pip install --upgrade pip
+        pip install --upgrade requests bs4
     - name: Get Weather
       run: python .github/update-weather.py
     - name: Configure Git
