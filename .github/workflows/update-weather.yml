@@ -12,13 +12,13 @@ jobs:
     - uses: actions/setup-python@v3
       with:
         python-version: '3.x'
-      env:
-        OWMAPIKEY: ${{ secrets.OWMAPIKEY }}
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
         pip install --upgrade requests bs4
     - name: Get Weather
+      env:
+        OWMAPIKEY: ${{ secrets.OWMAPIKEY }}
       run: python .github/update-weather.py
     - name: Configure Git
       run: git config --global user.name "Leo Herzog" && git config --global user.email "leo@herzog.tech"
