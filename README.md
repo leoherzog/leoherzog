@@ -4,7 +4,7 @@
 <p>
  I'm a technology enthusiast living in West Michigan, where it's
  <span id="weather">
-  mist and 42.5°F
+  42.3°F and mist
  </span>
  right now. I currently work at
  <a href="https://hope.edu/directory/people/herzog-leo/" target="_blank">
