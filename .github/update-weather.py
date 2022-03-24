@@ -9,7 +9,7 @@ weather = requests.get('https://api.openweathermap.org/data/2.5/weather?lat=42.7
 print(weather)
 
 profile = BeautifulSoup(open('README.md'), 'html.parser')
-profile.find(id='weather').string = weather['weather'][0]['description'] + ' and ' + str(round(weather['main']['temp'], 1)) + '°F'
+profile.find(id='weather').string = str(round(weather['main']['temp'], 1)) + '°F and ' + weather['weather'][0]['description']
 
 overwrite = open('README.md', 'w')
 overwrite.write(profile.prettify())
