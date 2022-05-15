@@ -4,7 +4,7 @@
 <p>
  I'm a technology enthusiast living in West Michigan, where it's
  <span id="weather">
-  54.1°F and overcast clouds
+  55.7°F and few clouds
  </span>
  right now. I currently work at
  <a href="https://hope.edu/directory/people/herzog-leo/" target="_blank">
