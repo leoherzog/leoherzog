@@ -4,12 +4,12 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-weather = requests.get('https://api.openweathermap.org/data/2.5/weather?lat=42.7777&lon=-86.1000&units=imperial&appid=' + os.environ['OWMAPIKEY']).json()
+weather = requests.get('https://swd.weatherflow.com/swd/rest/better_forecast?station_id=71686&token=' + os.environ['TEMPEST_PUT']).json()
 
 print(weather)
 
 profile = BeautifulSoup(open('README.md'), 'html.parser')
-profile.find(id='weather').string = str(round(weather['main']['temp'], 1)) + '°F and ' + weather['weather'][0]['description']
+profile.find(id='weather').string = str(round(weather['current_conditions']['air_temperature'], 1)) + '°' + weather['units']['units_temp'] + ' and ' + weather['current_conditions']['conditions']
 
 overwrite = open('README.md', 'w')
 overwrite.write(profile.prettify())
