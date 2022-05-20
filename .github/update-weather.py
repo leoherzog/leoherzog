@@ -9,7 +9,7 @@ weather = requests.get('https://swd.weatherflow.com/swd/rest/better_forecast?sta
 print(weather)
 
 profile = BeautifulSoup(open('README.md'), 'html.parser')
-profile.find(id='weather').string = str(round(weather['current_conditions']['air_temperature'], 1)) + '°' + weather['units']['units_temp'].upper() + ' and ' + weather['current_conditions']['conditions']
+profile.find(id='weather').string = str(round(weather['current_conditions']['air_temperature'])) + '°' + weather['units']['units_temp'].upper() + ' and ' + weather['current_conditions']['conditions']
 
 overwrite = open('README.md', 'w')
 overwrite.write(profile.prettify())
