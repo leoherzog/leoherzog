@@ -45,5 +45,5 @@
  </ul>
 </p>
 <p>
- I'm a learner, teacher, tea enthustast, campfire ukulele player, weather spotter, comedy lover, and your friend.
+ I'm a learner, teacher, tea enthustast, campfire ukulele player, flag enthusiast, weather spotter, comedy lover, and your friend.
 </p>
