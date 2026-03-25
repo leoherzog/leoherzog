@@ -1,6 +1,6 @@
 # 👋 Hello! I'm Leo.
 
-I'm a technology enthusiast living in West Michigan, where it's ​57°F and ⛅ Partly Cloudy​ right now. I currently work at [Hope College](https://hope.edu/directory/people/herzog-leo/) and have enthusiasm for too many things.
+I'm a technology enthusiast living in West Michigan, where it's ​60°F and ☁️ Cloudy​ right now. I currently work at [Hope College](https://hope.edu/directory/people/herzog-leo/) and have enthusiasm for too many things.
 
 I enjoy working with:
 - Javascript and Google Apps Script
